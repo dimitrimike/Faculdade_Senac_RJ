@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Operador ternário</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+        let salario = Number(prompt("Entre com um salário:"));
+        const TETO = 8475.55;
+        let inss;
+        let perfilGerente;
+        if (salario<=TETO){
+            inss = salario * 0.11;
+            perfilGerente = false;
+        } else {
+            inss = TETO * 0.11;
+            perfilGerente = true;
+        }
+        alert(`Desconto inss: ${inss}`);
+        (perfilGerente) ? alert("Você possui perfil de gerente") : alert("Você não possui perfil de gerente");
+    </script>
+</body>
+
+</html>

@@ -1,3 +1,3 @@
-from .paciente_view import *
-from .medico_view import *
-from .consulta_view import *
+from .paciente_views import *
+from .medico_views import *
+from .consulta_views import *

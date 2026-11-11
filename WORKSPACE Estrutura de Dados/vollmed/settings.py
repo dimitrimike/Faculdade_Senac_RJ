@@ -44,7 +44,7 @@ ROOT_URLCONF = 'vollmed.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [], # construir tamplates aqui
+        'DIRS': ['templates'], # vou incluir os meus htmls
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

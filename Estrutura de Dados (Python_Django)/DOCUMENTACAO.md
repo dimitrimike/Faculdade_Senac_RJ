@@ -1,0 +1,55 @@
+<<<<<<< HEAD:WORKSPACE Estrutura de Dados/DOCUMENTACAO.md
+# COMANDOS DO DJANGO
+
+1. ``pip install django ``-> Instala o Django no projeto.
+2. ``django-admin startproject nome_do_projeto .`` -> Criando um novo projeto em django.
+3. ``python manage.py runserver`` -> Subindo o servidor.
+4. ``python manage.py startapp nome_do_app`` -> Criando um novo app.
+5. ``python manage.py migrate`` ->  Realiza as migrações(ativa) do projeto.
+6. ``python manage.py createsuperuser`` -> Criar um novo super usuário.
+7. ``python manage.py changepassword nomedousuario`` -> Altera a senha, caso você esqueça.
+8. ``python manage.py makemigrations`` -> Cria/gera um novo pacote de migração (Útil para novo app e alteração do BD).
+
+
+# TAGS DO DJANGO HTML
+> {% load static %} -> Habilita do staticno arquivo. Cada template que usa `{% static %}` precisa ser carregado. 
+> {% block title %} -> Insere o título da aba. As páginas filhas trocam.
+> {% block header %} -> O header público (Logo+entrar). `O base_Logado.html` troca por inteiro.
+> {% block header_actions %} -> Só o botão "entrar". O `login.html` esvazia o bloco.
+> {% include ... %} Insere as mensagens e/ou blocos de código.
+> {% block content %} -> O miolo da página, cada filha vai ter seu próprio <main>.
+
+## TAGS DE ROTA 
+> {% url 'sistema:meidco-list' %} -> Fica nos templates e se refere a uma lista de médicos que está no app sistema.
+> {% url 'sistema:medico-uudate' medico.pk %} -> Utilização no template com parâmetro para update do medico.
+> {% url url_voltar %} -> url_voltar é o nome de uma variável que guarda uma lógica de retorno a página anterior.
+> redirect('sistema:medico-list') -> Fica numa view e informa que quando uma ação for realizada, o usuário será redirecionado.
+> {%  %}
+=======
+# COMANDOS DO DJANGO
+
+1. ``pip install django ``-> Instala o Django no projeto.
+2. ``django-admin startproject nome_do_projeto .`` -> Criando um novo projeto em django.
+3. ``python manage.py runserver`` -> Subindo o servidor.
+4. ``python manage.py startapp nome_do_app`` -> Criando um novo app.
+5. ``python manage.py migrate`` ->  Realiza as migrações(ativa) do projeto.
+6. ``python manage.py createsuperuser`` -> Criar um novo super usuário.
+7. ``python manage.py changepassword nomedousuario`` -> Altera a senha, caso você esqueça.
+8. ``python manage.py makemigrations`` -> Cria/gera um novo pacote de migração (Útil para novo app e alteração do BD).
+
+
+# ATIVIDADE
+1. Criar um model para o médico com as informações: 
+ - Nome
+ - Sobrenome
+ - E-mail
+ - Data da Criação
+ - Telefone
+ - CRM (6 digitos), será string
+ - Especialidade 
+ - Mensagem
+ - Ativo = True 
+
+ 2. Na Exibição do Portal administrativo, deverá ser apresentado:
+ - Id, Nome, email, telefone, especialidade, crm, ativo 
+>>>>>>> 325ef1e162b9fa694feff91785a710609b7efe2f:Estrutura de Dados (Python_Django)/DOCUMENTACAO.md

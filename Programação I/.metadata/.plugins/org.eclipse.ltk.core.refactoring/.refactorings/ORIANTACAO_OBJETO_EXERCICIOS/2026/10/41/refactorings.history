@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring accessors="true" comment="Delete element from project &apos;ORIANTACAO_OBJETO_EXERCICIOS&apos;&#x0D;&#x0A;- Original project: &apos;ORIANTACAO_OBJETO_EXERCICIOS&apos;&#x0D;&#x0A;- Original element: &apos;ORIANTACAO_OBJETO_EXERCICIOS/src/lista_poo&apos;" description="Delete element" element1="/src&lt;lista_poo" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1791546636814" subPackages="false" version="1.0"/>
-</session>

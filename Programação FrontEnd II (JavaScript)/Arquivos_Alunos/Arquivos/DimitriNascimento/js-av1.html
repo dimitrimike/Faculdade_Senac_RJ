@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProvaDimitri</title>
+    <script type="text/javascript" src="js/js-av1.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        const carro1 = new Carro();
+        let opcao;
+        do {
+            opcao = Number(prompt("1-Escolher da carro da garagem\n2-acelerar o carro\n3-frear o carro\n4-Exibir informações do carro\n5-Guardar o carro\nInforme a opção desejada: "));
+            switch (opcao) {
+                case 1:
+                    carro1.modelo = prompt("Digite o modelo do carro: ");
+                    carro1.cor = prompt("Digite a cor do carro: ");
+                    carro1.placa = prompt("Digite a placa do carro: ");
+                    break;
+                case 2:
+                    carro1.acelerar();
+                    break;
+                case 3:
+                    carro1.frear();
+                    break;
+                case 4:
+                    alert(`Seu carro é do modelo ${carro1.modelo}, cor ${carro1.cor}, placa ${carro1.placa}, está viajando a ${carro1.velocidade} km/h`);
+                case 5:
+                    break;
+                default:
+                    alert(`Você não escolheu uma opção valida.`)
+            }
+        } while (opcao !=5);
+        alert("Carro foi guardado na garagem.")
+    </script>
+</body>
+</html>

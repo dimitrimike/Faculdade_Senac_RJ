@@ -1,0 +1,26 @@
+package logistica.modelo;
+
+public class Envio {
+	public String codigoRastreio;
+	public double pesoKg;
+	public int tipoEntrega;
+	public double valorFrete;
+	
+	public double calcularValorFrete() {
+		double frete;
+		switch (this.tipoEntrega) {
+		case 1:
+			frete = 10 + 5*pesoKg;
+			break;
+		case 2:
+			frete = 25 + 9*pesoKg;
+			break;
+		case 3:
+			frete = 60 + 20*pesoKg;
+			break;
+		default:
+			frete = 15 + 4*pesoKg;
+		}
+		return (frete);
+	}
+}

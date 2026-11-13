@@ -1,0 +1,9 @@
+package logistica.modelo;
+
+public class Envio {
+	public String codigoRastreio;
+	public double pesoKg;
+	public int tipoEntrega;
+	public double valorFrete;
+
+}

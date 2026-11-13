@@ -1,0 +1,26 @@
+package validacao;
+
+public class ValidaSKU {
+	private String skuCodigo;
+	private String skuValidado;
+	
+	ValidaSKU (String sku){
+		this.skuCodigo = sku;
+	}
+	
+	public boolean AjustarSKU() {
+		String skuTrim = this.skuCodigo.trim();
+		String skuUpperCase = skuTrim.toUpperCase();
+		
+		if (skuUpperCase.indexOf("PRD-")==-1)
+			return(false);
+		else
+			this.skuValidado = skuUpperCase.substring(4,skuUpperCase.length());
+	}
+	
+	public static void main(String[] args) {
+		ValidaSKU sku1 = ValidaSKU("PRD-12345");
+		ValidaSKU sku2 = ValidaSKU("PRD-34129");
+	}
+
+}

@@ -1,0 +1,21 @@
+package questao5;
+
+import java.util.Scanner;
+
+public class Pontuacao {
+	
+	private String texto;
+	
+	Pontuacao(String texto){
+		this.texto = texto;
+	}
+	
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		Pontuacao texto1 = new Pontuacao(input.next());
+		System.out.println("Campo de escrita: " + texto1);
+		
+	}
+
+}

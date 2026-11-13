@@ -1,0 +1,12 @@
+package biblioteca;
+
+public class LivroAcervo {
+	
+	private int codLivro;
+	private String titulo;
+	private int totalExemplares;
+	private int exemplaresEmprestados;
+	
+	
+
+}
